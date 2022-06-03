@@ -79,25 +79,28 @@ main h3 {
   background-size:contain;
 }
 .content-main {
-  max-width: 275px;
   margin: 0 auto;
-}
-.back img{
-  max-width: 100%;
+  background-image: url(/img/Layer.svg);
+  background-repeat: no-repeat;
+  background-position:bottom;
+  background-size:contain;
 }
 .content-media img{
-  padding: 10px;
+  padding: 0 10px 100px 10px;
+  width: 60px;
 }
 /* about me */
-
 .acerca-de-mi p {
   text-align: center;
   letter-spacing: 1.5px;
-  margin-top: 25px;
+
 }
 .acerca-de-mi {
   min-width: 265px;
   margin: 0 25px 0 25px;
+}
+.acerca-de-mi h2{
+  margin-top: 0;
 }
 
 /* skills */
@@ -137,6 +140,10 @@ main h3 {
   width: 75px;
   height: 75px;
 }
+.content-skills p{
+  color: var(--third-color);
+  font-weight: bold;
+}
 /* experience */
 .experiencia {
   min-width: 265px;
@@ -170,7 +177,8 @@ main h3 {
 }
 .portafolio img {
   margin: 0 auto 25px auto;
-  max-width: 320px;
+  max-width: 400px;
+  min-width: 300px;
 }
 .content-portfolio{
   display: flex;
@@ -223,12 +231,11 @@ footer{
     margin-right: 25px;
   }
   .content-main {
-    max-width: 400px;
-    margin: 0 auto;
+     max-width:max-content; 
+    /* margin: 0 auto; */
   }
   .acerca-de-mi{
-    max-width: 992px;
-    margin: 0 auto;
+    margin: 0 50px;
   }
   .skills-tittle{
     padding-top: 35px;
@@ -242,10 +249,37 @@ footer{
     margin: 0 auto;
   }
   .content-portfolio{
-    max-width: 992px;
-    margin: 0 auto;
+
+    margin: 0 50px;
   }
   h2{
     text-align: center;
+    font-size: 50px;
+  }
+  h1{
+    font-size: 150px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  main h3{
+    font-size: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  h4{
+    font-size: 45px;
+  }
+  p{
+    font-size: 18px;
+  }
+  .portafolio{
+    background-size: 15%;
+  }
+  .skills-tittle{
+    background-size: 20%;
+  }
+  .content-media img{
+    padding: 0 10px 200px 10px;
+    width: 80px;
   }
 }

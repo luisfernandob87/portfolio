@@ -8,6 +8,7 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-size: 62.5%;
 }
 *,
 *:before,
@@ -19,40 +20,42 @@ body {
   font-family: var(--font-family);
   margin: 0;
   padding: 0;
+  
 }
 h1 {
   color: var(--third-color);
-  font-size: 40px;
+  font-size: 4.0rem;
 }
 h2 {
-  font-size: 25px;
+  font-size: 2.5rem;
   color: var(--third-color);
   text-align: start;
 }
 h4 {
-  font-size: 18px;
+  font-size: 1.8rem;
   color: var(--third-color);
 }
 p {
-  font-size: 16px;
+  font-size: 1.6rem;
   color: var(--secondary-color);
 }
 a {
   color: var(--third-color);
   text-decoration: none;
+  font-size: 1.8rem;
 }
 /* menu mobile */
 nav {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-right: 15px;
+  margin-right: 1.5rem;
 }
 nav a{
-  margin-bottom: 10px;
+  margin-bottom: 1.0rem;
 }
 header img {
-  margin: 15px 15px 0 auto;
+  margin: 1.5rem 1.5rem 0 auto;
   display: block;
   cursor: pointer;
 }
@@ -64,13 +67,14 @@ header img {
 }
 /* main */
 .img-principal img {
-  margin: 40px auto 0 auto;
+  margin: 4.0rem auto 0 auto;
   max-width: 65%;
 }
 main h3 {
   color: var(--secondary-color);
-  font-size: 25px;
+  font-size: 2.5rem;
   font-weight: 600;
+
 }
 .main {
   text-align: center;
@@ -87,18 +91,17 @@ main h3 {
   background-size:contain;
 }
 .content-media img{
-  padding: 0 10px 100px 10px;
-  width: 60px;
+  padding: 0 1.0rem 8.0rem 1.0rem;
+  width: 6.0rem;
 }
 /* about me */
 .acerca-de-mi p {
   text-align: center;
   letter-spacing: 1.5px;
-
+  margin-bottom: 0;
 }
 .acerca-de-mi {
-  min-width: 265px;
-  margin: 0 25px 0 25px;
+  margin: 0 2.5rem 0 2.5rem;
 }
 .acerca-de-mi h2{
   margin-top: 0;
@@ -111,15 +114,16 @@ main h3 {
   background-position-x:115% ;
   background-position-y:0 ;
   background-size: 25%;
+  padding-top: 1.5rem;
 }
 .skills-tittle h2{
-  margin-left: 25px;
+  margin-left: 2.5rem;
 }
 .skill-img{
   background-color: #1c1616;
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 10.0rem;
+  height: 10.0rem;
   text-align: center;
   margin: 0 auto;
   display: flex;
@@ -132,27 +136,29 @@ main h3 {
 .content-skills{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  min-width: 265px;
-  margin: 0 25px 0 25px;
+  margin: 0 2.5rem 0 2.5rem;
 }
 .skill-img img{
   display:inline-block;
   margin: 0 auto;
-  width: 75px;
-  height: 75px;
+  width: 7.5rem;
+  height: 7.5rem;
 }
 .content-skills p{
   color: var(--third-color);
   font-weight: bold;
+  margin-bottom: 0;
 }
 /* experience */
 .experiencia {
-  min-width: 265px;
-  margin: 50px 25px 0 25px;
+  margin: 3.5rem 2.5rem 0 2.5rem;
 }
 .content-exp{
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+.content-exp p{
+  margin-bottom: 0;
 }
 .content-exp span{
   color: var(--third-color);
@@ -164,9 +170,7 @@ main h3 {
 }
 /* portfolio */
 .portafolio {
-  padding-top: 25px;
-  min-width: 265px;
-  /* margin: 0 25px 0 25px; */
+  padding-top: 3.5rem;
   background-image: url(/img/Group\ 97.svg);
   background-repeat: no-repeat;
   background-position-x:-7% ;
@@ -174,12 +178,11 @@ main h3 {
   background-size: 25%;
 }
 .portafolio h2{
-  margin: 0 25px 25px 25px;
+  margin: 0 2.5rem 2.5rem 2.5rem;
 }
 .portafolio img {
-  margin: 0 auto 25px auto;
-  max-width: 400px;
-  min-width: 300px;
+  margin: 0 auto 2.5rem auto;
+  max-width: 40.0rem;
 }
 .content-portfolio{
   display: flex;
@@ -188,20 +191,22 @@ main h3 {
 /* footer */
 footer{
   text-align: center;
-  min-width: 265px;
-  margin: 25px 25px 0 25px;
+  margin: 1.0rem 2.5rem 0 2.5rem;
+}
+footer h2{
+  margin-top: 0;
 }
 .container-footer{
   display: flex;
   justify-content: center;
-  min-width: 265px;
-  margin: 0 25px 25px 25px;
+  gap: 15%;
+  margin: 0 2.5rem 2.5rem 2.5rem;
 }
 .border{
   border: 1px var(--secondary-color) solid;
   border-radius: 50%;
-  width: 75px;
-  height: 75px;
+  width: 7.5rem;
+  height: 7.5rem;
   text-align: center;
   margin: 0 auto;
   display: flex;
@@ -212,75 +217,71 @@ footer{
 .border img{
   display:inline-block;
   margin: 0 auto;
-  width: 50px;
+  width: 5.0rem;
 }
 
 /* media queries */
 @media (min-width:992px) {
-  /* body{
-    background-color: #adadad;
-  } */
   .menu-mobile{
     display: none;
   }
   .hidden{
     display: block;
     text-align:right;
-    margin-top: 15px;
+    margin-top: 1.5rem;
   }
   .hidden a{
-    margin-right: 25px;
-  }
-  .content-main {
-     max-width:max-content; 
-    /* margin: 0 auto; */
+    margin-right: 2.5rem;
   }
   .acerca-de-mi{
-    margin: 0 50px;
+    margin: 0 5.0rem;
   }
-  .skills-tittle{
-    padding-top: 35px;
-  }
+ 
   .content-skills{
-    max-width: 992px;
+    max-width: 99.2rem;
     margin: 0 auto;
   }
   .content-exp{
-    max-width: 800px;
+    max-width: 80.0rem;
     margin: 0 auto;
   }
   .content-portfolio{
-
-    margin: 0 50px;
+    margin: 0 5.0rem;
   }
   h2{
     text-align: center;
-    font-size: 50px;
+    font-size: 5.0rem;
   }
   h1{
-    font-size: 150px;
+    font-size: 7.0rem;
     margin-top: 0;
     margin-bottom: 0;
   }
   main h3{
-    font-size: 50px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    font-size: 5.0rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
   }
   h4{
-    font-size: 45px;
+    font-size: 4.5rem;
   }
   p{
-    font-size: 18px;
+    font-size: 1.8rem;
   }
   .portafolio{
     background-size: 15%;
+    padding-top: 4.0rem;
   }
   .skills-tittle{
     background-size: 20%;
+    padding-top: 0;
   }
   .content-media img{
-    padding: 0 10px 200px 10px;
-    width: 80px;
+    padding: 0 1.0rem 20.0rem 1.0rem;
+    width: 8.0rem;
   }
+  footer{
+    margin-top: 1.5rem;
+  }
+  
 }

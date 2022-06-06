@@ -137,6 +137,7 @@ main h3 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 0 2.5rem 0 2.5rem;
+  gap: 2.5rem;
 }
 .skill-img img{
   display:inline-block;
